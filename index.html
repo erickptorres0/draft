@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DG Immigration Support</title>
+    <meta
+      name="description"
+      content="DG Immigration Support – Helping you understand your immigration options with clear information and friendly guidance."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="container nav-content">
+        <div class="logo">DG Immigration Support</div>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Friendly immigration support with clear information.</h1>
+          <p>
+            We help you understand what you may qualify for, prepare for your
+            consultation, and get organized &mdash; without giving legal advice.
+          </p>
+          <a href="#contact" class="btn-primary">Schedule a consultation</a>
+          <p class="hero-small">
+            You can also chat with our assistant in the corner of the page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Case Pre-Screening</h3>
+            <p>
+              Answer simple questions so we can understand your situation and
+              connect you with the right type of immigration service.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Form &amp; Document Guidance</h3>
+            <p>
+              Get clarity on which forms are commonly used and what documents
+              people usually collect for different immigration processes.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Consultation Preparation</h3>
+            <p>
+              We help you organize your information so you can make the most of
+              your time with a licensed immigration professional.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Notary Services</h3>
+            <p>
+              We provide notary services for certain documents related to your
+              immigration process.
+            </p>
+          </div>
+        </div>
+        <p class="disclaimer">
+          <strong>Disclaimer:</strong> We are not a law firm and do not provide
+          legal advice. For legal advice, you must speak with a licensed
+          attorney or accredited representative.
+        </p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="section alt">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>
+            <strong>Chat with our assistant:</strong> Answer basic questions
+            about your situation (no sensitive details).
+          </li>
+          <li>
+            <strong>We suggest next steps:</strong> The assistant suggests what
+            type of service or consultation might fit you best.
+          </li>
+          <li>
+            <strong>Schedule a consultation:</strong> You choose a time to talk
+            with a human for more detailed help and guidance.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Fill out this form and we will get in touch to confirm your
+          consultation and next steps.
+        </p>
+
+        <!-- Simple email form (no backend, sends via email client) -->
+        <form
+          class="contact-form"
+          action="mailto:youremail@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">How can we help you?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Example: I want to know if I qualify for..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> DG Immigration Support. All rights reserved.</p>
+        <p class="footer-small">
+          We provide general information and administrative support. We do not
+          provide legal advice.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Set current year in footer
+      document.addEventListener('DOMContentLoaded', function () {
+        const yearSpan = document.getElementById('year');
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+
+    <!-- Dapta AI Chatbot -->
+    <script src="https://widget.dapta.ai/dapta_agent_min.js?agentId=1ca6cf13-af29-4f0a-b22d-542a1e1c7af7"></script>
+  </body>
+</html>
